@@ -90,4 +90,59 @@ const mainApp = Vue.createApp({
     }
 }).mount('#main-app');
 
+const footerApp = Vue.createApp({
+    components: {
+        'footer-component': {
+            template: `
+                <footer id="global-footer">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h3>contact</h3>
+                                    <p>お問い合わせ</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>download</h3>
+                                    <p>ダウンロード</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>consultations</h3>
+                                    <p>無料説明会</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="global-footer-sitemap">
+                        <dl>
+                            <dt>サイトマップ</dt>
+                            <div class="global-footer-sitemap-text">
+                                <ul>
+                                    <li>TOP</li>
+                                    <li>ABOUT</li>
+                                    <li>SERVICE</li>
+                                    <li>NEWS</li>
+                                </ul>
+                                <ul>
+                                    <li>JOURNAL</li>
+                                    <li>PEOPLE</li>
+                                    <li>BUSINESS FIELD</li>
+                                    <li>PROJECT CASES</li>
+                                    <li>RECRUIT</li>
+                                </ul>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="global-footer-copyright"><small>Copyright © mercury. All rights reserved.</small></div>
+                </footer>
+            `
+        }
+    }
+}).mount('#footer-app');
+
+
 

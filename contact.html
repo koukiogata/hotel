@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com;">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://unpkg.com 'unsafe-eval';">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/vue.global.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>水の惑星</title>
+</head>
+
+<body>
+    <header :class="{ hidden: isHeaderHidden }">
+        <nav class="global-header-container">
+            <a href="#"><img src="image/header-rogo-image2.png" alt="ロゴ"></a>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" @click="toggleMenu">
+                <span :class="{ 'actiev': isMenuOpen }"></span>
+                <span :class="{ 'actiev': isMenuOpen }"></span>
+                <span :class="{ 'actiev': isMenuOpen }"></span>
+            </div>
+            <!-- Navigation Menu -->
+            <ul :class="{ 'menu-open': isMenuOpen }">
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="about.html">水の惑星について</a></li>
+                <li><a href="service.html">サービス紹介</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contact-main">
+        <div class="contact-wrapper">
+            <h1>人生の乾いた旅に潤いを</h1>
+            <div class="contact-image"><img src="/image/tr.png" alt=""></div>
+        </div>
+    </main>
+    <footer id="global-footer">
+        <nav>
+            <ul>
+                <li>
+                    <h3>contact</h3>
+                    <p>お問い合わせ</p>
+                </li>
+                <li>
+                    <h3>download</h3>
+                    <p>ダウンロード</p>
+                </li>
+                <li>
+                    <h3>consultations</h3>
+                    <p>無料説明会</p>
+                </li>
+            </ul>
+        </nav>
+        <div class="global-footer-sitemap">
+            <dl>
+                <dt>サイトマップ</dt>
+                <div class="global-footer-sitemap-text">
+                    <ul>
+                        <li>TOP</li>
+                        <li>ABOUT</li>
+                        <li>SERVICE</li>
+                        <li>NEWS</li>
+                    </ul>
+                    <ul>
+                        <li>JOURNAL</li>
+                        <li>PEOPLE</li>
+                        <li>BUSINESS FIELD</li>
+                        <li>PROJECT CASES</li>
+                        <li>RECRUIT</li>
+                    </ul>
+                </div>
+            </dl>
+        </div>
+        <div class="global-footer-copyright"><small>Copyright © mercury. All rights reserved.</small></div>
+    </footer>
+</body>
+
+</html>
