@@ -961,7 +961,7 @@ main>.index_wrapper {
 }
 
 #about-main {
-    background-image: url(/image/about-top-image.png);
+    background-image: url(./image/about-top-image.png);
     background-size: cover;
     /* 画面全体に画像を表示 */
     background-position: center;
